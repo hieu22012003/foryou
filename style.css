@@ -1,0 +1,64 @@
+.button {
+    display: inline-block;
+    margin: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.1875rem;
+    outline: none;
+    background-color: rgb(218, 71, 255);
+    color: white;
+    font-family: inherit;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 150ms ease-out;
+  }
+  .button:focus, .button:hover {
+    background-color: #ff59fc;
+    box-shadow: 0 0 0 0.1875rem white, 0 0 0 0.375rem #de59ff;
+  }
+  .button:active {
+    background-color: #f243db;
+    box-shadow: 0 0 0 0.1875rem #f243de, 0 0 0 0.375rem #f243e3;
+    transition-duration: 75ms;
+  }
+  .button.is-outlined {
+    border: 0.1875rem solid rgb(255, 71, 240);
+    background-color: transparent;
+    color: rgb(243, 71, 255);
+  }
+  .button.is-outlined:focus, .button.is-outlined:hover {
+    border-color: #fc59ff;
+    color: #ff59e3;
+  }
+  .button.is-outlined:active {
+    border-color: #f243b8;
+    color: #e943f2;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: #fafafa;
+    font-family: Roboto, sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  body {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  
